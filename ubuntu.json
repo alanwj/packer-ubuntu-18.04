@@ -67,6 +67,7 @@
         "environment_vars": [
             "DESKTOP={{user `desktop`}}",
             "UPDATE={{user `update`}}",
+            "EXTRA_PACKAGES={{user `extra_packages`}}",
             "INSTALL_VAGRANT_KEY={{user `install_vagrant_key`}}",
             "SSH_USERNAME={{user `ssh_username`}}",
             "SSH_PASSWORD={{user `ssh_password`}}",
@@ -78,6 +79,7 @@
         "expect_disconnect": true,
         "scripts": [
             "script/update.sh",
+            "script/extra_packages.sh",
             "script/vagrant.sh",
             "script/virtualbox.sh",
             "script/motd.sh",
@@ -108,6 +110,7 @@
         "ssh_password": "vagrant",
         "ssh_username": "vagrant",
         "update": "true",
+        "extra_packages": "",
         "vagrantfile_template": "",
         "version": "0.1",
         "virtualbox_guest_os_type": "Ubuntu_64",
